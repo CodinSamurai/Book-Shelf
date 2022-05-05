@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+.delete{
+    background-color: rebeccapurple;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#wrapper{
+   width: 90%;
+   border: 1px solid lightgray;
+   border-radius: 6px;
+   margin: 30px auto;
+   max-width: 960px;
+   padding: 0 0 20px;
+   overflow: hidden;
+   box-shadow: 0px 1px 6px rgba(0, 0, 0,0.2);
+}
+#page-banner{
+    background-color: rgba(0, 0, 0,0.3);
+    text-align: center;
+    padding: 20px  0;
+}
+#page-banner p{
+    margin: 10px 0;
+}
+#search-books input{
+    width: 90%;
+    padding: 7px;
+    max-width: 450px;
+    /* the margin and display code can be deleted */
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#book-list{
+    margin-top: 20px;
+    padding: 10px;
+}
+#book-lists{
+    margin-left: 20px;
+}
+#book-list ul li{
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    border-left: 4px solid grey;
+}
+#book-list ul li:hover{
+    border-left: 4px solid rebeccapurple;
+    cursor: pointer;
+    color: royalblue;
+}
+.icon{
+    background-color: rebeccapurple;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    float: right;
+    position: relative;
+    right: 40px;
+}
+#add-book{
+    text-align: center;
+    margin: 30px auto;
+}
+#add-book input{
+    width: 90%;
+    max-width: 350px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#add-book button{
+    background-color: rebeccapurple;
+    color: #ddd;
+    padding: 7px 30px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0;
+}
+.removee{
+    visibility: hidden;
+    /* display: none; */
+}
+.displayBlock{
+    display: block;
+    background-color: #444;
+}
