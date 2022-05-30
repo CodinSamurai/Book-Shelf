@@ -52,7 +52,8 @@ addBook.addEventListener('submit', function(e){
       var value1 = value.slice(0,1).toUpperCase();
        var value2 = value.slice(1,value.length).toLowerCase();
        var newValue = value1 + value2;
-       var neww = newValue.replace(/\s/g,'');
+    //    var neww = newValue.replace(/\s/g,'');
+          var neww = newValue.trim();
     
        if (neww.length == 0 && neww == ''){
            console.log('write');
@@ -81,7 +82,8 @@ addBook.addEventListener('submit', function(e){
     // deleteBtn.textContent = "reload";
     // deleteBtn.classList.add('displayBlock');
 
-    addBook.reset(); }
+    addBook.reset(); 
+    }
 })
 
 var checkBox = document.querySelector('.check');
